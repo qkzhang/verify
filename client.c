@@ -277,7 +277,7 @@ _SendClient_Main(void) {
         }
 
         if(0 == getsockopt(socketFd, SOL_SOCKET, SO_SNDBUF, (char *) &iOptVal, &optLen)) {
-            fprintf(stdout, "SO_SNDBUF is set successfully! %d!\n", optLen);
+            fprintf(stdout, "SO_SNDBUF is set successfully! %d!\n", iOptVal);
         }
     }
 
