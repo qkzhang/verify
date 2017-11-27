@@ -1,0 +1,10 @@
+## ==> make -f Makefile.sample
+
+CC_CFLAGS = -O2 -Wall
+CC_LFLAGS = -lpthread -lm
+
+all:
+	gcc $(CC_CFLAGS) client.c $(CC_LFLAGS) -o client
+
+clean:
+	rm -f *.o client

@@ -1,0 +1,10 @@
+## ==> make -f Makefile.sample
+
+CC_CFLAGS = -O2 -Wall
+CC_LFLAGS = -lpthread -lm
+
+all:
+	gcc $(CC_CFLAGS) server.c $(CC_LFLAGS) -o server
+
+clean:
+	rm -f *.o server
